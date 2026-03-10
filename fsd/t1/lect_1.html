@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+         function call() {
+            obj = JSON.parse('{"name" : "test" , "age" : 18 , "city" : "ahm" , "dob" : "1990-08-23"}')
+
+            obj = new Date(obj.dob)
+            document.getElementById("demo").innerHTML = obj
+        }
+    </script>
+</head>
+<body>
+    <script>
+        // var a = {
+        //     "name" : "test",
+        //     "age" : 30
+
+        // }
+
+        // console.log(a.age)
+
+
+
+
+
+        // let obj = JSON.parse('{"var1" : "lj","var2" : "uni"}');
+
+        // console.log(obj)
+        // console.log(obj.var1 + " " + obj.var2)
+
+
+        // let obj1 = JSON.stringify('{"var1" : "lj","var2" : "uni"}');
+
+        // console.log(obj1)
+        // console.log(obj1.var1 + " " + obj1.var2)
+
+
+
+
+
+        // const a = {
+        //     'name' : 'tree',
+        //     'course' : 'intro',
+        //     'content' : ['a' , 'b' , 'c']
+        // }
+
+        // console.log(a.name)
+        // console.log(a.course)
+        // console.log(a.content[0])
+
+
+
+        // const user = {
+        //     "name" : ['abc' , 'def'],
+        //     'age' : '28',
+        //     'course' : ['fsd' , 'de'],
+        //     'address' : ['t1', 't2', {"t3" : "give again"}]
+        // }
+
+        // console.log(user.address[2]["t3"])
+
+
+
+
+
+        const a = {
+            'ds' : [{
+                'name' : 'tree',
+                'course' : 'intro',
+                'content' : ['a' , 'b' , 'c']
+            },
+            
+            {
+                'name' : 'tree1',
+                'course' : 'intro1',
+                'content' : ['1' , 'b' , 'c' , 'd']
+            }
+            ],
+
+            'xyz' : {
+                "name" : 'graphics',
+                'topic' : ["bfs" , "dfs" , 'sorting']
+                }
+        }
+
+        // console.log(a.ds[1].name)
+        // console.log(a.ds[1])
+        // console.log(a.ds[0].name)
+        // console.log(a.xyz.name)
+        // console.log(a.xyz)
+        // console.log(a.xyz.topic)
+        // console.log(a.xyz.topic[0])
+
+    </script>
+
+    <p id = "demo"></p>
+
+    <button onclick="call()">
+        click me
+    </button>
+</body>
+</html>
