@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        const sub = {
+            "fsd" : [
+                {
+                    "topic" : "html",
+                    "course" : "beginner",
+                    "content" : ["tags" , "tab"]
+                },
+
+                {
+                    "topic" : "html",
+                    "course" : "beginner",
+                    "content" : ["tags" , "tab"]
+                },
+
+                {
+                    "topic" : "html",
+                    "course" : "beginner",
+                    "content" : ["tags" , "tab"]
+                },
+
+                {
+                    "topic" : "html",
+                    "course" : "beginner",
+                    "content" : ["tags" , "tab"]
+                }
+            ]
+        }
+
+        document.write("using for...in loop")
+
+        
+        for(x in sub.fsd) {
+            for(y in sub.fsd[x]) {
+                document.write(sub.fsd[x][y] + "<br>")
+            }
+        }
+
+        // for (x1 of sub.fsd) {
+        //     document.write(x1.topic + "<br>")
+        //     document.write(x1.course)
+        //     document.write(x1.content)
+        // }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
