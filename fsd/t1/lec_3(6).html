@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+
+<p id="p1"></p>
+<p id="p2"></p>
+
+<button onclick="fun1()">Increase</button>
+<button onclick="fun2()">Decrease</button>
+<button onclick="stop()">Stop</button>
+
+<script>
+
+font = 15
+font1 = 50
+test = null
+
+function fun(font) {
+    p1.style.fontSize = font + "px"
+    p1.style.color = "red"
+    p1.innerHTML = "Hello World"
+}
+
+function fun1() {
+
+    test = setInterval(
+        function() {
+            if(font <= 200) {
+                fun(font++)
+            }
+        }, 10
+    )
+
+}
+
+function fun2() {
+
+    test = setInterval(
+        function() {
+            if(font1 >= 15) {
+                fun(font1--)
+            }
+        }, 100
+    )
+
+}
+
+function stop() {
+    clearInterval(test)
+}
+
+</script>
+
+</body>
+</html>

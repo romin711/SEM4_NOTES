@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1">Hi</p>
+
+    <button onclick="fun1()">Increase</button>
+
+    <script>
+        // font = "15"
+
+        // function fun(font) {
+        //     p1.style.fontSize = font + "px"
+        //     p1.style.color = "red"
+        // }
+
+        // function fun1() {
+        //     setInterval(
+        //         function() {
+        //             if(font <= 50) {
+        //                 fun(font++)
+        //             }
+        //         }, 10
+        //     )
+        // }
+
+
+        font = "150"
+
+        function fun(font) {
+            p1.style.fontSize = font + "px"
+            p1.style.color = "red"
+        }
+
+        function fun1() {
+            setInterval(
+                function() {
+                    if(font >= 5) {
+                        fun(font--)
+                    }
+                }, 10
+            )
+        }
+    </script>
+</body>
+</html>
